@@ -1,1 +1,0 @@
-# menoiza.github.io
