@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indstillinger - Portfolio</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <div class="profile-section">
+                <img id="user-avatar" src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Profilbillede">
+                <h2 id="username">Bruger</h2>
+            </div>
+            <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Tilbage til forsiden</a>
+            <button id="logout-btn" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Log ud</button>
+        </div>
+        
+        <div class="content">
+            <h1>Indstillinger</h1>
+            
+            <div class="settings-card">
+                <h2>Tema</h2>
+                <div class="theme-selector">
+                    <button class="theme-btn active" data-theme="dark">Mørkt</button>
+                    <button class="theme-btn" data-theme="light">Lyst</button>
+                    <button class="theme-btn" data-theme="blue">Blåt</button>
+                </div>
+            </div>
+            
+            <div class="settings-card">
+                <h2>Sprog</h2>
+                <select id="language-select">
+                    <option value="da" selected>Dansk</option>
+                    <option value="en">Engelsk</option>
+                </select>
+            </div>
+            
+            <div class="settings-card">
+                <h2>Profiloplysninger</h2>
+                <div class="form-group">
+                    <label for="display-name">Visningsnavn</label>
+                    <input type="text" id="display-name" placeholder="Dit navn">
+                </div>
+                <div class="form-group">
+                    <label for="bio">Kort beskrivelse</label>
+                    <textarea id="bio" rows="3" placeholder="Skriv lidt om dig selv..."></textarea>
+                </div>
+            </div>
+            
+            <button id="save-settings" class="save-btn">Gem indstillinger</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
